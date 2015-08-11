@@ -1,0 +1,18 @@
+<ul>
+  <li ng-repeat="student in students">
+      {{student.firstName}}
+      <a href="/student/{{student._id}}">Edit</a>
+  </li>
+</ul>
+<div class="col-md-12">
+  <label>First Name</label>
+  <input ng-model="student.firstName" type="text" />
+
+  <label>Last Name</label>
+  <input ng-model="student.lastName" type="text" />
+
+  <label>Phone</label>
+  <input ng-model="student.phone" type="text" />
+
+  <button ng-click="save()">Save</button>
+</div>
